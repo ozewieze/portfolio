@@ -1,0 +1,28 @@
+/* variables.css */
+
+:root {
+  /* colors */
+  --color-bg: #f8f6f1;
+  --color-text: #242321;
+  --color-muted: #716c66;
+  --color-accent: #4e73a5;
+  --color-border: #d9d4cc;
+
+  /* layout */
+  --container-width: 74rem;
+  --page-padding: 2rem;
+
+  /* typography */
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Inter", Arial, sans-serif;
+
+  /* spacing */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 3rem;
+  --space-6: 4rem;
+  --space-7: 6rem;
+  --space-8: 8rem;
+}
