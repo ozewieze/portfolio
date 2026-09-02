@@ -2,12 +2,29 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  font-family: var(--font-body);
   background: var(--color-bg);
   color: var(--color-text);
+  font-size: var(--size-16);
+}
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  line-height: 1.2;
+  font-weight: var(--normal);
+}
+h1 {
+  font-size: clamp(var(--size-44), 2.1875rem + 2.8125vw, var(--size-62));
 }
 
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: var(--spacing-2);
 }

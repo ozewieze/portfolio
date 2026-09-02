@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing-12) var(--spacing-24);
+  background-color: red;
+}
+.header-navList {
+  display: flex;
+  list-style: none;
+  gap: var(--spacing-32);
+}
+.header-navLink {
+}
