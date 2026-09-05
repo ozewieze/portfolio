@@ -3,10 +3,13 @@
 :root {
   /* COLORS */
   --color-bg: #f8f6f1;
+  --color-title: #242220;
   --color-text: #3e3b38;
   --color-muted: #716c66;
   --color-accent: #466895;
+  --color-accent-hover: #3f5e86;
   --color-border: #d9d4cc;
+  --color-border-hover: #c3bfb8;
 
   /* LAYOUT */
   --container-width: 74rem;
