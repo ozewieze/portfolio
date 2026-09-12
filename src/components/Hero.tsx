@@ -7,7 +7,7 @@ export default function Hero() {
           junior software developer<span aria-hidden="true">&middot;</span>
           beschikbaar voor stage
         </p>
-        <h1 className="hero__title">Stef Ballyn</h1>
+        <h1>Stef Ballyn</h1>
         <p className="hero__intro">
           Ik leer web- en mobiele applicaties bouwen vanuit mijn eigen ideeën.
         </p>

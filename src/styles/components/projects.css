@@ -1,0 +1,12 @@
+.projects {
+  padding-top: var(--spacing-96);
+  padding-bottom: var(--spacing-80);
+  border-bottom: 1px solid var(--color-border);
+}
+.projects__grid {
+  margin-top: var(--spacing-64);
+}
+
+.projects__title {
+  font-size: clamp(var(--size-30), 4vw, var(--size-44));
+}
