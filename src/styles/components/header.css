@@ -11,6 +11,11 @@
   font-size: var(--size-16);
   font-family: var(--font-display);
 }
+.header__nav {
+  @media (max-width: 48rem) {
+    display: none;
+  }
+}
 .header__nav-list {
   display: flex;
   align-items: center;
@@ -45,4 +50,124 @@
   &:hover::after {
     transform: scaleX(1);
   }
+}
+.header__menu {
+  display: none;
+  border: none;
+  background: transparent;
+  width: var(--spacing-32);
+  height: var(--spacing-32);
+
+  &:hover {
+    cursor: pointer;
+  }
+  @media (max-width: 48rem) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.mobile-menu {
+  /* The UA defaults centre the dialog and cap its size; override all four. */
+  margin: 0 0 0 auto;
+  height: 100%;
+  max-height: 100%;
+  width: min(20rem, 80vw);
+  max-width: 100%;
+  border: none;
+  padding: 0;
+  background-color: var(--color-bg);
+  overflow: hidden;
+
+  transform: translateX(100%);
+  transition:
+    transform 250ms ease,
+    display 250ms allow-discrete,
+    overlay 250ms allow-discrete;
+
+  &[open] {
+    transform: translateX(0);
+  }
+  /* Without a starting value the panel would appear in place, unanimated. */
+  @starting-style {
+    &[open] {
+      transform: translateX(100%);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
+}
+.mobile-menu::backdrop {
+  background-color: rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transition:
+    opacity 250ms ease,
+    display 250ms allow-discrete,
+    overlay 250ms allow-discrete;
+}
+.mobile-menu[open]::backdrop {
+  opacity: 1;
+}
+@starting-style {
+  .mobile-menu[open]::backdrop {
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mobile-menu::backdrop {
+    transition: none;
+  }
+}
+.mobile-menu__panel {
+  height: 100%;
+  padding: var(--spacing-16);
+  overflow-y: auto;
+}
+.mobile-menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile-menu__close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: transparent;
+  width: var(--spacing-32);
+  height: var(--spacing-32);
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+.mobile-menu__nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-24);
+  margin-block-start: var(--spacing-32);
+  padding: 0;
+  list-style: none;
+  font-size: var(--size-14);
+  font-weight: var(--medium);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.mobile-menu__nav-link {
+  text-decoration: none;
+  color: var(--color-text);
+
+  &:hover {
+    color: var(--color-accent);
+  }
+}
+.mobile-menu__title {
+  text-transform: uppercase;
+  font-size: var(--size-16);
+  font-weight: var(--bold);
+  color: var(--color-muted);
+  letter-spacing: -0.05em;
 }
