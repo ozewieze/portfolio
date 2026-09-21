@@ -4,9 +4,9 @@ import { useEffect, useRef } from "react";
 type NavItem = { label: string; href: string };
 
 const navItems: NavItem[] = [
-  { label: "Projects", href: "#projects" },
-  { label: "About", href: "#about" },
-  { label: "Skills", href: "#skills" },
+  { label: "Projecten", href: "#projects" },
+  { label: "Over mij", href: "#about" },
+  { label: "Vaardigheden", href: "#skills" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -55,11 +55,13 @@ export default function Header() {
           className="mobile-menu"
           ref={dialogRef}
           onClick={closeOnBackdropClick}
-          aria-label="Menu"
+          aria-labelledby="mobile-menu__title"
         >
           <div className="mobile-menu__panel">
             <div className="mobile-menu__header">
-              <h2 className="mobile-menu__title">Menu</h2>
+              <h2 className="mobile-menu__title" id="mobile-menu__title">
+                Menu
+              </h2>
               <button
                 className="mobile-menu__close"
                 onClick={closeMenu}

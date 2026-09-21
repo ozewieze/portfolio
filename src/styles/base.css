@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
 }
 body {
   font-family: var(--font-body);
@@ -14,6 +15,9 @@ h3 {
   line-height: 1.2;
   font-weight: var(--normal);
   color: var(--color-title);
+}
+h4 {
+  font-family: var(--font-body);
 }
 h1 {
   font-size: clamp(var(--size-44), 2.1875rem + 2.8125vw, var(--size-62));

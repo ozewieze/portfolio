@@ -6,6 +6,9 @@
   --color-title: #242220;
   --color-text: #3e3b38;
   --color-muted: #716c66;
+  --color-badge-text: #4d6e9a;
+  --color-badge-bg: #eaf0f7;
+  --color-badge-border: #c9d8ea;
   --color-accent: #466895;
   --color-accent-hover: #3f5e86;
   --color-border: #d9d4cc;
@@ -14,6 +17,7 @@
   /* LAYOUT */
   --container-width: 74rem;
   --page-padding: clamp(1rem, 3vw, 3rem);
+  --header-height: 3.5rem;
 
   /* TYPOGRAPHY */
   --font-display: "Lora", Georgia, serif;
@@ -52,4 +56,7 @@
   --normal: 400;
   --medium: 500;
   --bold: 700;
+
+  /* BORDER RADIUS */
+  --radius-pill: 999px;
 }

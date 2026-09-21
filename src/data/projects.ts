@@ -1,6 +1,12 @@
 import thainookScreenshot from "../assets/thainook.png";
+import thainookScreenshotAvif from "../assets/thainook.avif";
+import thainookScreenshotWebp from "../assets/thainook.webp";
 import beesBeesScreenshot from "../assets/bees-bees.png";
+import beesBeesScreenshotAvif from "../assets/bees-bees.avif";
+import beesBeesScreenshotWebp from "../assets/bees-bees.webp";
 import grandLibraryScreenshot from "../assets/grand-library.png";
+import grandLibraryScreenshotAvif from "../assets/grand-library.avif";
+import grandLibraryScreenshotWebp from "../assets/grand-library.webp";
 
 export type ProjectItem = {
   id: string;
@@ -11,8 +17,19 @@ export type ProjectItem = {
   technicalDecisions: string;
   technologies: string[];
   skillsLearned: string;
-  screenshot: { alt: string; imageDescription: string; path: string };
-  links?: { projectLink?: string; githubLink?: string };
+  screenshot: {
+    alt: string;
+    caption: string;
+    path: string;
+    avif: string;
+    webp: string;
+    width: number;
+    height: number;
+  };
+  links?: {
+    projectLink?: string;
+    githubLink?: string;
+  };
   status: "afgewerkt" | "in opbouw";
 };
 
@@ -40,9 +57,13 @@ export const projects: ProjectItem[] = [
     skillsLearned:
       "Ik leerde hoe database, authenticatie, API-routes en kaartfunctionaliteit samenkomen in een grotere full-stack applicatie, en deed ervaring op met samenwerken aan één codebase.",
     screenshot: {
-      alt: "het admin overzicht van de waarnemingen van de leden",
-      imageDescription: "het admin overzicht van de waarnemingen van de leden",
+      alt: "Adminoverzicht van de waarnemingen van de leden",
+      caption: "Adminoverzicht van de waarnemingen door de leden",
       path: beesBeesScreenshot,
+      avif: beesBeesScreenshotAvif,
+      webp: beesBeesScreenshotWebp,
+      width: 797,
+      height: 862,
     },
     links: {
       projectLink: "https://platform.biodynimkers.be/",
@@ -71,10 +92,13 @@ export const projects: ProjectItem[] = [
     skillsLearned:
       "Ik oefende verder met React/Next.js, Supabase en PostgreSQL en leerde vooral hoe je gestructureerde content van database tot live applicatie organiseert.",
     screenshot: {
-      alt: "interface van de dialoogspeler met bewegende illustraties",
-      imageDescription:
-        "interface van de dialoogspeler met bewegende illustraties",
+      alt: "Dialoogspeler met bewegende illustraties",
+      caption: "Dialoogspeler met bewegende illustraties",
       path: thainookScreenshot,
+      avif: thainookScreenshotAvif,
+      webp: thainookScreenshotWebp,
+      width: 786,
+      height: 852,
     },
     links: {
       projectLink: "https://www.thainook.app/",
@@ -98,9 +122,13 @@ export const projects: ProjectItem[] = [
     skillsLearned:
       "Ik leerde een full-stack Next.js-app structureren rond gebruikersrollen, relationele data, formulieren, validatie, dynamische routing en herbruikbare componenten.",
     screenshot: {
-      alt: "homepagina van de ingelogde gebruiker",
-      imageDescription: "homepagina van de ingelogde gebruiker",
+      alt: "Filteropdracht op de homepagina",
+      caption: "Filteropdracht op de homepagina",
       path: grandLibraryScreenshot,
+      avif: grandLibraryScreenshotAvif,
+      webp: grandLibraryScreenshotWebp,
+      width: 807,
+      height: 855,
     },
     status: "afgewerkt",
   },

@@ -1,6 +1,10 @@
 .header {
+  background-color: var(--color-bg);
   border-bottom: 1px solid var(--color-border);
   padding-block: var(--spacing-16);
+  position: sticky;
+  top: 0;
+  min-height: var(--header-height);
 }
 .header__container {
   display: flex;
@@ -159,7 +163,6 @@
 .mobile-menu__nav-link {
   text-decoration: none;
   color: var(--color-text);
-
   &:hover {
     color: var(--color-accent);
   }
@@ -169,5 +172,5 @@
   font-size: var(--size-16);
   font-weight: var(--bold);
   color: var(--color-muted);
-  letter-spacing: -0.05em;
+  letter-spacing: 0.05em;
 }

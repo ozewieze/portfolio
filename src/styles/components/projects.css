@@ -3,10 +3,16 @@
   padding-bottom: var(--spacing-80);
   border-bottom: 1px solid var(--color-border);
 }
-.projects__grid {
+.projects__list {
   margin-top: var(--spacing-64);
 }
 
 .projects__title {
   font-size: clamp(var(--size-30), 4vw, var(--size-44));
+}
+.projects__list > .project-card:nth-child(even) {
+  flex-direction: row-reverse;
+  @media (max-width: 62rem) {
+    flex-direction: column;
+  }
 }

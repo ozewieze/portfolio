@@ -5,8 +5,8 @@ export default function Projects() {
   return (
     <section className="projects" id="projects">
       <div className="container">
-        <h2 className="projects__title">Geselecteerde Projecten</h2>
-        <div className="projects__grid">
+        <h2 className="projects__title">Geselecteerde projecten</h2>
+        <div className="projects__list">
           {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}

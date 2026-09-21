@@ -4,8 +4,11 @@ import Projects from "./components/Projects";
 const App = () => {
   return (
     <>
+      <a className="skip-link" href="#main">
+        Overslaan en naar hoofdinhoud gaan
+      </a>
       <Header />
-      <main>
+      <main id="main" tabIndex={-1}>
         <Hero />
         <Projects />
       </main>
