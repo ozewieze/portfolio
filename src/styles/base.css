@@ -22,6 +22,9 @@ h4 {
 h1 {
   font-size: clamp(var(--size-44), 2.1875rem + 2.8125vw, var(--size-62));
 }
+h2 {
+  font-size: clamp(var(--size-30), 4vw, var(--size-44));
+}
 
 @media (prefers-reduced-motion: reduce) {
   html {
