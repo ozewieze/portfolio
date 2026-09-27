@@ -44,7 +44,7 @@ export default function ProjectCard({ project }: { project: ProjectItem }) {
         {projectContent.map((item) => {
           return (
             <div className="project-card__paragraph" key={item.subtitle}>
-              <h4 className="project-card__subtitle">{item.subtitle}</h4>
+              <h4 className="project-card__subtitle label">{item.subtitle}</h4>
               <p>{item.paragraph}</p>
             </div>
           );
@@ -82,7 +82,7 @@ export default function ProjectCard({ project }: { project: ProjectItem }) {
                   rel="noreferrer"
                 >
                   GitHub
-                  <span className="sr-only">, opent in nieuw tabblad</span>{" "}
+                  <span className="sr-only">, opent in nieuw tabblad</span>
                   <ExternalLinkIcon />
                 </a>
               </li>

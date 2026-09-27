@@ -8,7 +8,7 @@ export default function Skills() {
         <div className="skills__grid">
           {categories.map((category) => (
             <div key={category.title}>
-              <h3 className="skills__subtitle">{category.title}</h3>
+              <h3 className="skills__subtitle label">{category.title}</h3>
               <ul className="skills__items">
                 {category.skills.map((skill) => (
                   <li key={skill} className="skills__item">
