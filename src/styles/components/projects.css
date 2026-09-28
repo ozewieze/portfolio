@@ -1,0 +1,14 @@
+.projects {
+  padding-top: var(--spacing-96);
+  padding-bottom: var(--spacing-80);
+  border-bottom: 1px solid var(--color-border);
+}
+.projects__list {
+  margin-top: var(--spacing-64);
+}
+.projects__list > .project-card:nth-child(even) {
+  flex-direction: row-reverse;
+  @media (max-width: 62rem) {
+    flex-direction: column;
+  }
+}

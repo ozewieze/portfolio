@@ -1,0 +1,14 @@
+@import "./reset.css";
+@import "./variables.css";
+@import "./base.css";
+@import "./accessibility.css";
+@import "./utilities.css";
+@import "./components/header.css";
+@import "./components/hero.css";
+@import "./components/button.css";
+@import "./components/projects.css";
+@import "./components/project-card.css";
+@import "./components/about.css";
+@import "./components/skills.css";
+@import "./components/contact.css";
+@import "./components/footer.css";
