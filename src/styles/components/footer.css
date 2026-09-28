@@ -1,0 +1,12 @@
+.footer {
+  padding-block: var(--spacing-16);
+  color: var(--color-muted);
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-4);
+  font-size: var(--size-14);
+}
