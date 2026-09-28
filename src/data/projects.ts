@@ -62,8 +62,8 @@ export const projects: ProjectItem[] = [
       path: beesBeesScreenshot,
       avif: beesBeesScreenshotAvif,
       webp: beesBeesScreenshotWebp,
-      width: 797,
-      height: 862,
+      width: 793,
+      height: 856,
     },
     links: {
       projectLink: "https://platform.biodynimkers.be/",

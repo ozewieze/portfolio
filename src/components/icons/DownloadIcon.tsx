@@ -11,8 +11,8 @@ export default function DownloadIcon() {
       strokeLinejoin="round"
       aria-hidden="true"
     >
-      <path d="M12 7V20" />
-      <path d="M8 15L12 20L16 15" />
+      <path d="M12 6V20" />
+      <path d="M9 17L12 20L15 17" />
     </svg>
   );
 }

@@ -4,7 +4,7 @@ export default function Hero() {
     <section className="hero" id="hero">
       <div className="container hero__container">
         <p className="hero__eyebrow">
-          junior software developer<span aria-hidden="true">&middot;</span>
+          junior software developer <span aria-hidden="true">&middot;</span>{" "}
           beschikbaar voor stage
         </p>
         <h1>Stef Ballyn</h1>

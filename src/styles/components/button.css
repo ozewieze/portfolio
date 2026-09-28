@@ -9,6 +9,7 @@
 }
 .button--primary {
   background-color: var(--color-accent);
+  border: solid 1px var(--color-accent);
   color: var(--color-bg);
   transition: background-color 200ms ease;
   @media (prefers-reduced-motion: reduce) {

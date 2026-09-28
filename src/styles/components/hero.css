@@ -32,3 +32,9 @@
   gap: var(--spacing-16);
   flex-wrap: wrap;
 }
+@media (max-width: 20.5rem) {
+  .hero__buttons .button {
+    width: 100%;
+    justify-content: center;
+  }
+}

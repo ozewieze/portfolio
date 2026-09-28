@@ -5,10 +5,15 @@
   margin-bottom: clamp(var(--spacing-64), 8vw, var(--spacing-96));
   @media (max-width: 62rem) {
     flex-direction: column;
+    gap: var(--spacing-64);
+    align-items: flex-start;
   }
 }
 .project-card__media {
-  flex-basis: 50%;
+  width: 50%;
+  @media (max-width: 62rem) {
+    width: 100%;
+  }
 }
 .project-card__image {
   display: block;
@@ -24,7 +29,8 @@
   color: var(--color-muted);
 }
 .project-card__content {
-  flex-basis: 50%;
+  flex: 1;
+  max-width: 70ch;
   display: flex;
   flex-direction: column;
   gap: var(--spacing-24);
